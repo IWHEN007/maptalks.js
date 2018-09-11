@@ -1,0 +1,26 @@
+ <！DOCTYPE>
+ <HTML>
+ <HEAD>
+     <meta charset =“UTF-8”/>
+     <title> Maptalks快速入门</ title>
+     <！ - 或链接到您下载的文件 - >
+     <link rel =“stylesheet”href =“https://cdn.jsdelivr.net/npm/maptalks/dist/maptalks.css”>
+     <script type =“text / javascript”src =“https://cdn.jsdelivr.net/npm/maptalks/dist/maptalks.min.js”> </ script>
+ </ HEAD>
+ <BODY>
+ <div style =“width：800px; height：600px;” ID = “地图”> </ DIV>
+ <script type =“text / javascript”>
+   //在div'map'中创建地图
+   var map = new maptalks.Map（'map'，{
+     中心：[0,0]，
+     zoom：2，
+     baseLayer：new maptalks.TileLayer（'base'，{
+       'urlTemplate'：'http：// {s} .basemaps.cartocdn.com / light_all / {z} / {x} / {y} .png'，
+       'subdomains'：['a'，'b'，'c'，'d']，
+       '归属'：'＆copy; <a href="http://www.osm.org/copyright"> OSM </a>贡献者，'+
+       '＆复制; <a href="https://carto.com/attributions"> CARTO </a>'
+     }）
+   }）;
+ </ SCRIPT>
+ </ BODY>
+ </ HTML
